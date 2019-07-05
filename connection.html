@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>connection</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+</head>
+<body>
+<div class="connection">
+    <header>
+        <div class="header__logo">
+            <div class="wrapper wrapper-flex">
+                <div class="header__logo-img">
+                    <img src="img/logo.png">
+                </div>
+                <div class="header__logo-text">
+                    <p class="header__logo-text-tittle">
+                        FIDEA
+                    </p>
+                    <p>
+                        CORPORATE SERVICE
+                    </p>
+                </div>
+                <div class="header__adress">
+                    <div class="header__adress-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="header__adress-text">
+                        <p>
+                            Наш адрес:
+                        </p>
+                        <p class="header__adress-text-big">
+                            Via Larga 13, 20122 Milano
+                        </p>
+                    </div>
+                </div>
+                <div class="header__phone">
+                    <div class="header__phone-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="header__phone-text">
+                        <p>
+                            +39 334 <span>221-42-72</span>
+                        </p>
+                        <a href="#">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="wrapper wrapper-flex">
+                <div id="header-img-navicon">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header__nav-link">
+                    <ul>
+                        <li>
+                            <a href="#">Наши услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Готовый бизнес</a>
+                        </li>
+                        <li>
+                            <a href="#">наши статьи</a>
+                        </li>
+                        <li>
+                            <a href="#">кейсы</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__nav-search">
+                    <input type="search" name="q" class="header__search-search" placeholder="поиск">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="header__nav-icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="header__nav-dropdown">
+                    <ul class="menu">
+                        <li><a href=#>личный кабинет</a>
+                            <ul class="submenu">
+                                <li><a href=#>Sudmenu 1</a></li>
+                                <li><a href=#>Sudmenu 1</a></li>
+                                <li><a href=#>Sudmenu 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__nav-img">
+                    <img src="img/img-dropdown.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="header__breadcrumb">
+                <a href="#">Главная &#8260;</a>
+                <a href="#">Скачать руководство по оптимизации</a>
+            </div>
+        </div>
+    </header>
+    <div class="connection__modalDialog">
+        <div>
+            <a href="#close1" title="Закрыть" class="close"><img src="img/close.png"></a>
+            <h2>Связаться с нами</h2>
+            <form class="connection__form">
+                <label for="connection__name">Ваше имя</label>
+                <input type="text" id="connection__name" class="connection__form-input">
+                <div class="connection-wrapper connection__form-input-margin">
+                <label for="connection__email"> Email</label>
+                <input type="email" id="connection__email" class="connection__form-input connection__form-input-little">
+                </div>
+                <div class="connection-wrapper">
+                    <label for="connection__phone">Номер телефона</label>
+                    <input type="tel" id="connection__phone" class="connection__form-input connection__form-input-little">
+                </div>
+                <label>Выберите темы</label>
+                <div class="connection-wrapper-theme">
+                    <div class="connection__theme">
+                        <p>
+                            Иммиграция
+                        </p>
+                    </div>
+                    <div class="connection__theme  connection__theme-active">
+                        <p>
+                            Регистрация компании
+                        </p>
+                    </div>
+                    <div class="connection__theme">
+                        <p>
+                            Налогооблажение
+                        </p>
+                    </div>
+                    <div class="connection__theme connection__theme-active">
+                        <p>
+                            Бухгалтерский учет
+                        </p>
+                    </div>
+                </div>
+                    <label>Задайте вопрос</label>
+                <textarea class="connection__textarea"></textarea>
+                <button type="submit" class="connection__btn">Отправить</button>
+            </form>
+            <p>
+                Как правило, отвечаем в течение 10 минут, если вопрос не требует дополнительного изучения!
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-main">
+        </div>
+        <div class="footer">
+        </div>
+    </footer>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/pixlayout/jquery.pixlayout.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#family-oll').click(function(e) {
+                $('.label__family-wrappe').toggleClass('diplay-none')
+            });
+            $('#applicant').click(function(e) {
+                $('.label__family-wrappe').toggleClass('diplay-none')
+            });
+            $('.connection__form-input').click(function (e) {
+                console.log(e);
+                $(this).addClass('ddd')
+            });
+        })
+    </script>
+</div>
+</body>
+</html>
+
+
+
