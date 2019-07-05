@@ -893,9 +893,9 @@ input[type="radio"]:checked + label:after {
 .connection {
   background: #b3d4fc;
 }
-.modalDialog {
+.connection__modalDialog {
   width: 750px;
-  height: 635px;
+  height: auto;
   border: #b3d4fc 1px solid;
   padding: 50px 37px;
   background: white;
@@ -909,12 +909,28 @@ input[type="radio"]:checked + label:after {
   /*pointer-events: none;*/
   h2 {
     margin-bottom: 34px;
+    font-family: ExoMedium;
     font-weight: 500;
 font-size: 30px;
 line-height: 36px;
     text-align: center;
     color: #2C333D;
   }
+  p {
+    font-family: ExoMedium;
+    font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+text-align: center;
+color: #2C333D;
+  }
+}
+.close {
+  position: absolute;
+  color: #555C64;
+  border: none;
+  left: 745px;
+  top: -30px;
 }
 .connection__form {
   width: 676px;
@@ -932,6 +948,9 @@ color: #515861;
   border: none;
   border-bottom: 1px solid #EAEAEA;
   margin-bottom: 38px;
+}
+.ddd {
+  height: 41px;
 }
 .connection-wrapper {
   width: 300px;
@@ -953,14 +972,15 @@ color: #515861;
 .connection__theme {
   width: auto;
   height: 27px;
+  font-family: ExoMedium;
   font-weight: 600;
 font-size: 11px;
 line-height: 13px;
 text-align: center;
-letter-spacing: 0.07em;
+/*letter-spacing: 0.07em;*/
 text-transform: uppercase;
 color: #111111;
-  padding: 7px 15px;
+  padding: 5px 15px 7px 15px;
   background:  #EAEAEA;
   border-radius: 100px;
 }
@@ -972,8 +992,32 @@ color: #111111;
   width: 676px;
   height: 86px;
   margin-top: 13px;
+  margin-bottom: 32px;
   border: 1px solid #EAEAEA;
   resize: none;
+}
+.connection__btn {
+  width: 676px;
+  height: 49px;
+  margin-bottom: 17px;
+  border: 1px solid #FF9B34;
+  font-family: ExoMedium;
+  font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #FF9B34;
+  background-image: url("../img/arrow-connection.png");
+  background-repeat: no-repeat;
+  background-position: 630px 18px;
+}
+.connection__btn:hover {
+  background: #FF9B34;
+  color: white;
+   background-image: url("../img/arrow-connection-white.png");
+  background-repeat: no-repeat;
+  background-position: 630px 18px;
 }
 /*footer*/
 .footer-main, .footer {
