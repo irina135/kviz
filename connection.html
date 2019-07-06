@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>connection</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
 </head>
@@ -111,7 +111,10 @@
             </div>
         </div>
     </header>
-    <div class="connection__modalDialog">
+    <div class="modal__btn">
+        Показать модальное окно
+    </div>
+    <div class="connection__modalDialog modalDialog-display-none">
         <div>
             <a href="#close1" title="Закрыть" class="close"><img src="img/close.png"></a>
             <h2>Связаться с нами</h2>
@@ -119,12 +122,14 @@
                 <label for="connection__name">Ваше имя</label>
                 <input type="text" id="connection__name" class="connection__form-input">
                 <div class="connection-wrapper connection__form-input-margin">
-                <label for="connection__email"> Email</label>
-                <input type="email" id="connection__email" class="connection__form-input connection__form-input-little">
+                    <label for="connection__email"> Email</label>
+                    <input type="email" id="connection__email"
+                           class="connection__form-input connection__form-input-little">
                 </div>
                 <div class="connection-wrapper">
                     <label for="connection__phone">Номер телефона</label>
-                    <input type="tel" id="connection__phone" class="connection__form-input connection__form-input-little">
+                    <input type="tel" id="connection__phone"
+                           class="connection__form-input connection__form-input-little">
                 </div>
                 <label>Выберите темы</label>
                 <div class="connection-wrapper-theme">
@@ -149,13 +154,29 @@
                         </p>
                     </div>
                 </div>
-                    <label>Задайте вопрос</label>
+                <label>Задайте вопрос</label>
                 <textarea class="connection__textarea"></textarea>
-                <button type="submit" class="connection__btn">Отправить</button>
+                <button type="button" class="connection__btn">Отправить</button>
             </form>
             <p>
                 Как правило, отвечаем в течение 10 минут, если вопрос не требует дополнительного изучения!
             </p>
+        </div>
+    </div>
+    <div class="connection__modalDialog-successfully modalDialog-display-none">
+        <div>
+            <a href="#close1" title="Закрыть" class="close"><img src="img/close.png"></a>
+            <h2>Связаться с нами</h2>
+            <div class="connection__circle">
+                <svg>
+                    <polyline points="18,45 40,65 75,23" style="fill:white;stroke:#FF9B34;stroke-width: 4">
+                </svg>
+            </div>
+            <div class="connection__text">
+                <p>
+                    Благодарим вас, сообщение было успешно отправлено.<br> Мы ответим вам в ближайшее время
+                </p>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -168,16 +189,33 @@
     <script src="vendors/pixlayout/jquery.pixlayout.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#family-oll').click(function(e) {
+            $('#family-oll').click(function (e) {
                 $('.label__family-wrappe').toggleClass('diplay-none')
             });
-            $('#applicant').click(function(e) {
+            $('#applicant').click(function (e) {
                 $('.label__family-wrappe').toggleClass('diplay-none')
             });
             $('.connection__form-input').click(function (e) {
                 console.log(e);
-                $(this).addClass('ddd')
+                $(this).addClass('connection__form-input-height')
             });
+            $('.modal__btn').click(function () {
+                $('.connection__modalDialog').removeClass('modalDialog-display-none')
+            });
+            $('.close').click(function () {
+                $('.connection__modalDialog').addClass('modalDialog-display-none')
+            });
+            $('.connection__btn').click(function () {
+                $('.connection__modalDialog').addClass('modalDialog-display-none')
+            });
+            $('.connection__btn').click(function () {
+                $('.connection__modalDialog-successfully').removeClass('modalDialog-display-none')
+            });
+            $('.close').click(function () {
+                $('.connection__modalDialog-successfully').addClass('modalDialog-display-none')
+            });
+
+
         })
     </script>
 </div>
